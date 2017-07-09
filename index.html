@@ -1,55 +1,45 @@
 <!doctype html>
 <html>
     <head>
-        <title>Tumblr Likes</title>
-        <!-- Oauth.io Javascript SDK -->
-        <script type="text/javascript" src="assets/libs/oauth.min.js"></script>
-        <script type="text/javascript" src="assets/libs/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="assets/libs/mustache.js"></script>
-        <script type="text/javascript" src="assets/js/likes.js"></script>
-        <script type="text/javascript">
-            $(function(){
-                console.log("Initialize Oauth.js");
-                OAuth.initialize('uveKR0W7KcKILOiyrTVnhOWIH6E');
-
-                $("#signin").click(function(){
-                    console.log("#signin clicked");
-
-                    // start oauth flow
-                    OAuth.popup('tumblr', {cache: true}).done(function(tumblr) {
-                        console.log("User succesfully logedin");
-                        console.log(tumblr);
-
-                        // redirect to /likes
-                        window.location = "likes";
-
-                    }).fail(function(err) {
-                        // todo when the OAuth flow failed
-                        alert("authentication failed: " + err);
-                    });
-                });
-            });
-        </script>
-        <style type="text/css">
-            #content {
-                width: 400px;
-            }
-        </style>
+        <meta charset='utf-8'>
+      	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+      	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tumblr Likes Grid</title>
+        
+        <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="assets/css/global.css">
     </head>
 
     <body>
-        <div id="content">
-            Welcome! In order to view your likes, Tumblr requires
-            that you first log in and provide access for this "application"
-            (it's really just one page). This allows the page to make
-            queries against Tumblr's API for your likes and other user
-            information.
-            <br/><br/>
-            The information is only used for presentation and
-            is not stored anywhere or used for any reason other than to
-            display your likes.
-            <br/><br/>
-            With that being said...<a href="#" id="signin">sign in with Tumblr</a> to continue!
+        <header>
+            <a class="tumblr-logo" href="https://tumblr.com/" target="_blank">
+                <img src="assets/images/tumblr-logo.png" alt="Tumblr Logo">
+            </a>
+            
+            <a class="project-title" href=""><h1>Tumblr Likes Grid</h1></a>
+            
+            <div class="buttons">
+                <button id="about" type="button">About</button>
+            </div>
+        </header>
+        
+        <div class="card">
+           <h2 class="card-title">Welcome!</h2>
+           <div class="card-content">
+               <p>In order to view your likes, Tumblr requires that you first log in and provide access for this "application" (it's really just one page). This allows the page to make queries against Tumblr's API for your likes and other user information.</p><br>
+               <p>The information is only used for presentation and is not stored anywhere or used for any reason other than to display your likes.</p><br>
+               <p>With that being said...</p>
+           </div>
+           <a href="#" id="signin" class="card-link">sign in with Tumblr</a>
         </div>
+        
+        <!-- Oauth.io Javascript SDK -->
+        <script type="text/javascript" src="assets/libs/oauth.min.js"></script>
+        
+        <script type="text/javascript" src="assets/libs/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="assets/libs/mustache.js"></script>
+        <script type="text/javascript" src="assets/libs/fancybox/jquery.fancybox-1.3.4.js"></script>
+        <script type="text/javascript" src="assets/js/tumblr-likes.js"></script>
+        <script type="text/javascript" src="assets/js/home.js"></script>
     </body>
 </html>

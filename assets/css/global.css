@@ -1,0 +1,185 @@
+/* Global Styles for all pages */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #ECF0F1;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background: #36465D;
+    display: block;
+    height: 60px;
+}
+
+header .tumblr-logo {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    padding: 5px;
+    float: left;
+}
+header .tumblr-logo img {
+    width: 100%;
+}
+
+header .project-title {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+}
+
+header .project-title h1 {
+    display: inline-block;
+}
+
+header .buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    height: 50px;
+    padding: 5px;
+}
+
+header .buttons button {
+    border: none;
+    background: #FFFFFF;
+    color: #36465D;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+header .buttons button:hover {
+    cursor: pointer;
+}
+/* Styles for the Home page */
+.card {
+    max-width: 500px;
+    width: 100%;
+    margin: 120px auto 0 auto;
+    background: #FFFFFF;
+    border: 3px solid #36465D;
+    color: #333333;
+    border-radius: 5px;
+}
+
+.card .card-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card .card-content {
+    padding: 0 20px 20px 20px;
+}
+
+.card .card-link {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    background: #36465D;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.card .card-link:hover {
+    text-decoration: underline;
+}
+/* Styles for the Tumblr Likes Grid page */
+
+body.likes #blog_info {
+    height: 50px;
+    padding: 5px 0 5px 20px;
+    background: #BDC3C7;
+    line-height: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+body.likes #blog_info a.blog_title {
+    color: #36465D;
+    text-decoration: none;
+}
+
+body.likes #blog_info a.blog_title:hover {
+    text-decoration: underline;
+}
+
+div.brick {
+    border-radius: 5px;
+}
+
+div.brick img {
+    border-radius: 5px;
+}
+
+div.node {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+ul.column {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: auto;
+    float: left;
+    position: relative;
+}
+
+div.container {
+    width: 100%;
+}
+
+a.brick {
+    min-height: 82px;
+}
+
+#content .heading {
+    padding: 20px 0 13px 0;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1075px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+#content .brick .title.popoutText {
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 14px;
+}
+
+.date sup {
+    font-size: 10px;
+}
+
+#pagination {
+    clear: both;
+}

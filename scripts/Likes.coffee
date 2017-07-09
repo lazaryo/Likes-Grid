@@ -76,10 +76,14 @@ class @Likes
 	;
 
 	setHeaderInfoComplete = (likesCount, userName, primaryUrl) ->
-		blog = $("#nav a.blog_title")
-		text = "#{userName} &mdash; You like #{likesCount} posts!"
-		blog.attr("href", primaryUrl)
-		blog.html(text)
+		blogTitle = $("#blog_info a.blog_title")
+		text = "#{userName}"
+		blogTitle.attr("href", primaryUrl)
+		blogTitle.html(text)
+        
+		totalLikes = $("#blog_info span.total_likes")
+		text = " - #{likesCount} posts!"
+		totalLikes.html(text)
 	;
 
 	# --- unlike posts ---
