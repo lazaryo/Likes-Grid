@@ -29,6 +29,21 @@ $(function() {
         return false;
     });
     
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 250) {
+            $(".to-top").css("opacity", "1")
+        } else if ($(window).scrollTop() < 250) {
+            $(".to-top").css("opacity", "0")
+        }
+    });
+    
+    $('.to-top[href^="#"]').on('click', function(e) {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600, 'swing');
+        e.preventDefault();
+    });
+    
     // Until OAuth.clearCache() works again, deleting the cookie is going to used
     $("#logout").on('click', function() {
         delete_cookie('oauthio_provider_tumblr');

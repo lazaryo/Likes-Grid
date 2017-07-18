@@ -67,6 +67,7 @@ header .buttons button {
 header .buttons button:hover {
     cursor: pointer;
 }
+
 /* Styles for the Home page */
 .card {
     max-width: 500px;
@@ -182,4 +183,19 @@ a.brick {
 
 #pagination {
     clear: both;
+}
+
+.to-top {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.to-top img {
+    width: 100%;
 }
