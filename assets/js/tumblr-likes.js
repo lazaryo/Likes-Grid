@@ -136,7 +136,7 @@
           },
           failure: function() {
             if (this.debug) {
-              return console.log("cold not retrieve template '" + name + "' from file.");
+              return console.log("could not retrieve template '" + name + "' from file.");
             }
           }
         });
@@ -147,7 +147,7 @@
       } else {
         template = templateCache[name];
       }
-      return Mustache.to_html(template, data);
+      return Mustache.render(template, data);
     };
 
     renderPartial = function(partial, render) {

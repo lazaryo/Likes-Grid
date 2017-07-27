@@ -102,7 +102,7 @@ class ContentHelper
 					ctx.data = data
 
 				failure: ->
-					console.log "cold not retrieve template '#{name}' from file." if @debug
+					console.log "could not retrieve template '#{name}' from file." if @debug
 
 			if ctx.data
 				templateCache[name] = ctx.data
