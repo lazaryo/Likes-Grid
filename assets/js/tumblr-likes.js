@@ -249,6 +249,8 @@
             ++x;
           }
           ctx.frames = frames;
+        } else if (iStart == false) {
+            return 'post deleted';
         }
       }
       thumbnail.url = post.thumbnail_url;

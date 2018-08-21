@@ -1,49 +1,35 @@
 <html>
 <head>
-    <style type="text/css">       
-        .strike {
-            text-decoration: line-through;
+    <style type="text/css">
+        h3, p {
+            padding: 10px 0;
+        }
+        
+        ul li:before {
+            content: '- '
         }
     </style>
 </head>
   
 <body>
-    <div style="width: 400px">
-        Hi I'm Ben, and this was a little weekend project of mine.<br/>
-        <br/>
-        The visuals are all <span class="strike">stolen</span> borrowed from 
-        the Tumblr <a href="http://www.tumblr.com/mega-editor">archive page</a>.<br/><br/>
-        In the future, I would like to try out alternative ways of laying out         all of this data.
-        <br/><br/>
-        Here's what's inside the box:
+    <div style="width: 500px">
+        <p>In the future, I would like to try out alternative ways of laying out all of this data.</p>
+
+        <h3>Here's what's inside the box:</h3>
         <ul>
             <li><a href="http://mustache.github.com">mustache.js</a></li>
             <li><a href="http://jquery.com">jQuery</a></li>
-            <li><a href="http://www.php.net">PHP</a></li>
             <li>
-                <a href="http://oauth.net">OAuth</a>, with a little help from <a href="http://sudocode.net/article/351/authenticating-with-tumblr-using-oauth-in-php">Arvin Castro's example</a>
+                <a href="https://oauth.io/">oauth.io</a>, with some help from <a href="https://github.com/UnquietCode/Tumblr-Likes-Grid/pull/7p">pyk's PR</a>
             </li>
+            <li>Brian Carstensen's <a href="https://github.com/brian-c/js-util">js-util</a> mini project</li>
         </ul>
-        <br/>
-        The following sources were helpful, especially in setting up the OAuth authentication process:
-        <ul>
-            <li>
-                <a href="http://sudocode.net/article/351/authenticating-with-tumblr-using-oauth-in-php">Authenticating With Tumblr Using OAuth in PHP</a>
-            </li>
-            <li>
-                <a href="http://pastebin.com/g1ULp4bT">http://pastebin.com/g1ULp4bT</a>
-            </li>
-            <li>
-                Brian Carstensen's <a href="https://github.com/brian-c/js-util">js-util</a> mini project
-            </li>
-            <li>
-                and of course...<a href="http://www.tumblr.com">Tumblr!</a>&nbsp;&nbsp;&lt;3
-            </li>
-        </ul>
-        <br/>
-        You can visit my own tumblr blog at <a href="http://life.unquietcode.com">UnquietCode</a>.<br/>
-        <br/>
-        Enjoy!
+        
+        <p>You can visit my own tumblr blog at <a href="http://lazaryo.tumblr.com">Lazaryo</a></p>
+<!--        <p>This project has been forked from <a href="https://github.com/UnquietCode/Tumblr-Likes-Grid">UnquietCode's grid project</a>.</p>-->
+        
+        <h3>Notice</h3>
+        <p>This application uses the Tumblr application programming interface but is not endorsed or certified by Tumblr, Inc. All of the Tumblr logos and trademarks displayed on this application are the property of Tumblr, Inc.</p>
     </div>
 </body>
 </html>

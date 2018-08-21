@@ -20,6 +20,7 @@ $(function() {
         }).fail(function(err) {
             // todo when the OAuth flow failed
             alert("authentication failed: " + err);
+            console.log(err);
         });
     });
 });

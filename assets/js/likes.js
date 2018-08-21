@@ -47,7 +47,7 @@ $(function() {
     // Until OAuth.clearCache() works again, deleting the cookie is going to used
     $("#logout").on('click', function() {
         delete_cookie('oauthio_provider_tumblr');
-        OAuth.clearCache();
+//        OAuth.clearCache();
         window.location = "/tumblr-likes/";
     });
 });
