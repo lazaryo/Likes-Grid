@@ -4,7 +4,8 @@ $(function() {
     });
     
     console.log("Initialize Oauth.js");
-    OAuth.initialize('uveKR0W7KcKILOiyrTVnhOWIH6E');
+    OAuth.initialize('gzQql-f9InFuvQR83t7g7D4M4n8');
+//    OAuth.initialize('uveKR0W7KcKILOiyrTVnhOWIH6E');
 
     $("#signin").on('click', function(){
         console.log("#signin clicked");
@@ -12,7 +13,7 @@ $(function() {
         // start oauth flow
         OAuth.popup('tumblr', {cache: true}).done(function(tumblr) {
             console.log("User succesfully logedin");
-            console.log(tumblr);
+            //console.log(tumblr);
 
             // redirect to /likes
             window.location = "likes/";

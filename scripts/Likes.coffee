@@ -131,7 +131,7 @@ class @Likes
 
 	@startUp = ->
 		console.log "Tumblr Likes Grid, by Ben Fagin\nhttp://life.unquietcode.com\n\n"
-		OAuth.initialize 'uveKR0W7KcKILOiyrTVnhOWIH6E'
+		OAuth.initialize 'gzQql-f9InFuvQR83t7g7D4M4n8'
 		Likes.tumblr = OAuth.create "tumblr"
 
 		# TODO: redirect to '/' if user not login yet ---
